@@ -5,4 +5,114 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 }
+
+a:hover {
+    letter-spacing: .05rem;
+    transition: .3s;
+}
+
+.main .maintxt {
+    padding: 1.2rem;
+    padding-top: 5rem;
+    width: 40%;
+    color: white;
+}
+
+.mainbtns {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.mainbtns h5 {
+    padding: 2rem;
+    font-weight: 400;
+}
+
+.mainbtns a {
+    border-radius: .2rem;
+    padding: 0.5rem;
+    color: whitesmoke;
+}
+
+#btn1 {
+    background: #69a4fe;
+}
+
+#btn2 {
+    background: #9eafc9;
+}
+
+.navbar {
+    background: #b9cfff;
+    padding: 1rem;
+}
+
+.navbar ul {
+    /* padding: 0.3rem; */
+    overflow: hidden;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 0.3rem;
+}
+
+.navbar ul li a {
+    color: black;
+}
+
+.allbtns{
+    margin: 1.5rem;
+}
+.allbtns a{
+    color: whitesmoke;
+    padding: 0.4rem;
+    border-radius: .3rem;
+}
+.restsec {
+    background: #dbd8d3;
+    padding: 2rem;
+}
+
+.tops{
+    text-align: center;
+    margin: 1rem;
+}
+.tops h4{
+    text-transform: uppercase;
+}
+.picsec{
+    display: grid;grid-template-columns: repeat(3, auto);
+    gap: 1.2rem;
+    max-width: 80%;
+}
+.imgtags{
+    padding: 1rem;
+}
+.lowersec{
+    text-align: center;
+    margin: 1rem;
+}
+.lowersec h5{
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.footer {
+    background: #9eafc9;
+}
+
+@media (max-width: 756px) {
+    .main {
+        height: 45vh;
+    }
+
+    .main .maintxt {
+        padding: .5rem;
+        padding-top: 1.5rem;
+        width: 80%;
+    }
+}
+
+@media (min-width: 250px) and (max-width: 550px) {}

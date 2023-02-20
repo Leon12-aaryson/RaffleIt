@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RaffleIt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/styles/css/main.css">
+
+    <style>
+        .main {
+            background: url("static/images/mockup.jpg") no-repeat;
+            background-size: cover;
+            height: 80vh;
+            padding: 1.5rem;
+        }
+
+        @media (max-width: 756px) {
+            .main {
+                height: 45vh;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.html">HOW IT WORKS</a></li>
+            <li><a href="index.html">FAQ</a></li>
+            <li><a href="index.html">BLOG</a></li>
+            <li><a href="index.html">ABOUT</a></li>
+            <li><a href="index.html">CONTACT</a></li>
+            <li><a href="index.html" id="joinus">JOIN RAFFLE</a></li>
+        </ul>
+    </nav>
+    <section class="main">
+        <div class="maintxt">
+            <h2>THE BEST SPACE TO <br>DO YOUR FUNDING</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut possimus obcaecati distinctio dignissimos
+                excepturi iusto aperiam dolorum numquam porro ipsum laudantium consequuntur, voluptates provident error?
+            </p>
+        </div>
+        <div class="mainbtns">
+            <h5><a href="#" id="btn1">SIGN UP</a></h5>
+            <h5><a href="#" id="btn2">SIGN IN</a></h5>
+        </div>
+    </section>
+    <section class="mainbody">
+        <center>
+            <div class="litabt">
+                <h3>A LITTLE BIT ABOUT RAFFLES</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis alias doloribus, exercitationem esse
+                    consequatur eius enim nesciunt voluptatum eveniet praesentium. Officiis cum fuga voluptatem ad iure
+                    qui
+                    aperiam accusantium eligendi?</p>
+            </div>
+            <!-- <a href="#"class="morebtn" id="btn2">MORE ABOUT US</a> -->
+            <span class="morebtn">
+                <h5><a href="#" id="btn1">SIGN UP</a></h5>
+            </span>
+            <a href="#" class="morebtn" id="btn2">MORE ABOUT US</a>
+        </center>
+        <div class="imageframes">
+            <div class="img1">
+                <img src="static/images/team.jpeg" alt="">
+                <h4>Simple and secure</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, dolore quibusdam? Quia labore
+                    sunt dignissimos!</p>
+            </div>
+            <div class="img1">
+                <img src="static/images/team.jpeg" alt="">
+                <h4>Customizable</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, dolore quibusdam? Quia labore
+                    sunt dignissimos!</p>
+            </div>
+            <div class="img1">
+                <img src="static/images/team.jpeg" alt="">
+                <h4>Seamless</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, dolore quibusdam? Quia labore
+                    sunt dignissimos!</p>
+            </div>
+        </div>
+        <center>
+            <div>
+                <span class="morebtn">
+                    <a href="#" class="morebtn" id="btn2">START A RAFFLE NOW</a>
+                </span>
+                <!-- <a href="#" id="btn2">START A RAFFLE NOW</a> -->
+            </div>
+        </center>
+        <div class="fundraise">
+            <div class="create">
+                <h4>Create a raffle</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore omnis facere error eius minima?</p>
+            </div>
+            <div class="create">
+                <h4>Share a raffle</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore omnis facere error eius minima?</p>
+            </div>
+            <div class="create">
+                <h4>Fundraise</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore omnis facere error eius minima?</p>
+                <a href="#" id="btn2">Fundraise</a>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <center>&copy; All rights reserved to raffleit</center>
+    </section>
+</body>
+
+</html>
