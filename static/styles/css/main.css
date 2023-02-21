@@ -20,6 +20,15 @@ a:hover {
     color: white;
 }
 
+.main .abttxt {
+    padding: 1.2rem;
+    padding-top: 5rem;
+    text-align: center;
+    font-size: 2.5rem;
+    width: 50%;
+    color: white;
+}
+
 .mainbtns {
     margin-top: 1rem;
     display: flex;
@@ -63,44 +72,98 @@ a:hover {
     color: black;
 }
 
-.allbtns{
+.allbtns {
     margin: 1.5rem;
 }
-.allbtns a{
+
+.allbtns a {
     color: whitesmoke;
     padding: 0.4rem;
     border-radius: .3rem;
 }
+
 .restsec {
     background: #dbd8d3;
     padding: 2rem;
 }
 
-.tops{
+.tops {
     text-align: center;
     margin: 1rem;
+    width: 55%;
 }
-.tops h4{
+
+.tops h4 {
     text-transform: uppercase;
 }
-.picsec{
-    display: grid;grid-template-columns: repeat(3, auto);
+
+.picsec {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
     gap: 1.2rem;
-    max-width: 80%;
+    margin-top: 4rem;
+    margin: 2rem;
 }
-.imgtags{
+
+.imgtags {
+    text-align: center;
+}
+
+.picsec .imgtags {
+    width: 80%;
     padding: 1rem;
 }
-.lowersec{
+
+.imgtags img {
+    width: 100%;
+}
+
+.sect {
+    display: flex;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.sect .txt {
+    padding: 1.2rem;
+}
+
+.lowersec {
     text-align: center;
     margin: 1rem;
 }
-.lowersec h5{
+
+.lowersec h5 {
     text-transform: uppercase;
     font-size: 1rem;
 }
+
+.contact {
+    padding: 2rem;
+}
+
+.side .sect img {
+    height: auto;
+    width: auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 500px;
+    outline: none;
+    border: none;
+    padding: .5rem;
+    border-radius: .2rem;
+    margin-bottom: 1rem;
+
+}
+
+textarea {
+    height: 100px;
+}
+
 .footer {
-    background: #9eafc9;
+    background: #404040;
 }
 
 @media (max-width: 756px) {
