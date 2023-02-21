@@ -107,6 +107,17 @@ a:hover {
     margin-top: 4rem;
     margin: 2rem;
 }
+.picsec2 {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 1.2rem;
+    margin-top: 4rem;
+    margin: 2rem;
+}
+
+.picsec2 h4{
+    font-size: 1.2rem;
+}
 
 .imgtags {
     text-align: center;
@@ -136,6 +147,17 @@ a:hover {
     align-self: center;
 }
 
+.funcs{
+    margin: 2.3rem;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 2rem;
+    padding: 1.3rem;
+}
+/* 
+.funcs .txt ul li{
+    list-style: disc;
+} */
 .sect {
     display: flex;
     padding: 1rem;
