@@ -61,8 +61,18 @@
 
     .picsec2 {
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: auto auto;
         gap: 1.2rem;
+        margin: 0.5rem;
+    }
+
+    .picsec2 .imgtags img {
+        width: 90%;
+        height: 60%;
+    }
+    .picsec2 .imgtags .txt {
+        text-align: left;
+        padding: 0.5rem;
     }
 
     .funcs {

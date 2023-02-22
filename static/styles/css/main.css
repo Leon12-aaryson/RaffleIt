@@ -116,6 +116,11 @@ a:hover {
     margin: 2rem;
 }
 
+.picsec2 .imgtags img{
+    width: 80%;
+    height: 70%;
+}
+
 .picsec2 h4 {
     font-size: 1.2rem;
 }
