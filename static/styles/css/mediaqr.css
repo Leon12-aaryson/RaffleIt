@@ -33,8 +33,22 @@
         width: 100%;
     }
 
-    .footer{
+    .footer {
         width: 100%;
+    }
+
+    .footer form {
+        width: 80%;
+    }
+
+    .contact input,
+    .contact textarea {
+        width: 14rem;
+        padding: .3rem;
+    }
+
+    textarea {
+        height: 5rem;
     }
 }
 
