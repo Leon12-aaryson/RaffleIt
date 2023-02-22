@@ -1,0 +1,41 @@
+@media (max-width: 756px) {
+    .main {
+        height: 50vh;
+    }
+
+    .main .maintxt {
+        padding: .5rem;
+        padding-top: 1.5rem;
+        width: 80%;
+    }
+
+    .tops {
+        text-align: center;
+        margin: 1rem;
+        width: 85%;
+    }
+
+    .picsec {
+        display: grid;
+        grid-template-columns: auto;
+        margin-top: 2rem;
+        margin: 2rem;
+    }
+
+    .sect {
+        display: block;
+        /* padding: 1rem;
+        margin: 1rem; */
+    }
+
+    .side .sect img {
+        height: auto;
+        width: 100%;
+    }
+
+    .footer{
+        width: 100%;
+    }
+}
+
+@media (min-width: 250px) and (max-width: 550px) {}

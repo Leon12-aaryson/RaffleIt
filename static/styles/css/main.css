@@ -107,6 +107,7 @@ a:hover {
     margin-top: 4rem;
     margin: 2rem;
 }
+
 .picsec2 {
     display: grid;
     grid-template-columns: repeat(4, auto);
@@ -115,7 +116,7 @@ a:hover {
     margin: 2rem;
 }
 
-.picsec2 h4{
+.picsec2 h4 {
     font-size: 1.2rem;
 }
 
@@ -147,13 +148,14 @@ a:hover {
     align-self: center;
 }
 
-.funcs{
+.funcs {
     margin: 2.3rem;
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 2rem;
     padding: 1.3rem;
 }
+
 /* 
 .funcs .txt ul li{
     list-style: disc;
@@ -205,17 +207,3 @@ textarea {
 .footer {
     background: #404040;
 }
-
-@media (max-width: 756px) {
-    .main {
-        height: 45vh;
-    }
-
-    .main .maintxt {
-        padding: .5rem;
-        padding-top: 1.5rem;
-        width: 80%;
-    }
-}
-
-@media (min-width: 250px) and (max-width: 550px) {}
