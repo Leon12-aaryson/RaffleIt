@@ -43,12 +43,31 @@
 
     .contact input,
     .contact textarea {
-        width: 14rem;
+        width: 18rem;
         padding: .3rem;
     }
 
     textarea {
         height: 5rem;
+    }
+
+    /* about page starts here */
+    .main .abttxt {
+        padding-top: 2rem;
+        font-size: 2rem;
+        text-align: left;
+        width: 50%;
+    }
+
+    .picsec2 {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 1.2rem;
+    }
+
+    .funcs {
+        /* display: grid; */
+        grid-template-columns: auto;
     }
 }
 
