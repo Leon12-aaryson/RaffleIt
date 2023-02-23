@@ -59,6 +59,10 @@
         width: 50%;
     }
 
+    .sect img {
+        max-width: 100%;
+    }
+
     .picsec2 {
         display: grid;
         grid-template-columns: auto auto;
@@ -70,6 +74,7 @@
         width: 90%;
         height: 60%;
     }
+
     .picsec2 .imgtags .txt {
         text-align: left;
         padding: 0.5rem;

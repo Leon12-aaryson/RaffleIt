@@ -116,7 +116,7 @@ a:hover {
     margin: 2rem;
 }
 
-.picsec2 .imgtags img{
+.picsec2 .imgtags img {
     width: 80%;
     height: 70%;
 }
@@ -168,11 +168,16 @@ a:hover {
 .sect {
     display: flex;
     padding: 1rem;
-    margin: 1rem;
+    margin: 1.5rem;
+}
+
+.sect img {
+    max-width: 50%;
+    border-radius: .2rem;
 }
 
 .sect .txt {
-    padding: 1.2rem;
+    padding: 1rem;
 }
 
 .lowersec {
