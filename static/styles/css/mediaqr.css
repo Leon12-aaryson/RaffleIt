@@ -41,6 +41,10 @@
         width: 80%;
     }
 
+    .contact{
+        grid-template-columns: auto;
+    }
+
     .contact input,
     .contact textarea {
         width: 18rem;

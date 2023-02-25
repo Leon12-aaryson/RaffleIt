@@ -191,6 +191,8 @@ a:hover {
 }
 
 .contact {
+    display: grid;
+    grid-template-columns: auto auto;
     padding: 2rem;
 }
 
@@ -216,4 +218,7 @@ textarea {
 
 .footer {
     background: #404040;
+}
+.contdetail label{
+    color: white;
 }
