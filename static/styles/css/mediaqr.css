@@ -12,14 +12,29 @@
     .tops {
         text-align: center;
         margin: 1rem;
-        width: 85%;
+        width: 80%;
+    }
+
+    .tops p {
+        text-align: left;
     }
 
     .picsec {
-        display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 100%;
+        gap: .2rem;
         margin-top: 2rem;
-        margin: 2rem;
+        margin: 1rem;
+    }
+
+    .picsec .txt {
+        margin: auto;
+        text-align: center;
+    }
+
+    .picsec .imgtags {
+        width: 90%;
+        padding: 1.2rem;
+        justify-content: center;
     }
 
     .sect {
@@ -41,13 +56,13 @@
         width: 80%;
     }
 
-    .contact{
+    .contact {
         grid-template-columns: auto;
     }
 
-    .contact input,
-    .contact textarea {
-        width: 18rem;
+    .contform input,
+    .contform textarea {
+        width: 100%;
         padding: .3rem;
     }
 
@@ -74,6 +89,10 @@
         margin: 0.5rem;
     }
 
+    .imgtags p {
+        text-align: left;
+    }
+
     .picsec2 .imgtags img {
         width: 90%;
         height: 60%;
@@ -88,6 +107,33 @@
         /* display: grid; */
         grid-template-columns: auto;
     }
+
+    .reg img {
+        display: none;
+    }
+
+    .reg {
+        display: grid;
+        grid-template-columns: auto;
+        gap: .1rem;
+        padding: 1rem;
+        justify-content: center;
+    }
+
+    .reg1 .regform {
+        padding: 1rem;
+        width: 90%;
+    }
+
+    .regform input {
+        padding: .8rem;
+        margin: .4rem;
+        width: 85%;
+    }
+
+    .mainbtns {
+        margin-top: 1rem;
+    }
 }
 
-@media (min-width: 250px) and (max-width: 550px) {}
+@media (min-width: 757px) and (max-width: 850px) {}

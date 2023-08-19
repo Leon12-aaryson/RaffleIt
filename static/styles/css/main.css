@@ -15,8 +15,10 @@ a:hover {
     transition: .3s;
 }
 
+.main {}
+
 .main .maintxt {
-    padding: 1.2rem;
+    padding: 1.5rem;
     padding-top: 5rem;
     width: 40%;
     color: white;
@@ -50,29 +52,11 @@ a:hover {
 
 #btn1 {
     background: #69a4fe;
+    margin: 0.5rem;
 }
 
 #btn2 {
     background: #9eafc9;
-}
-
-.navbar {
-    background: #b9cfff;
-    padding: 1rem;
-}
-
-.navbar ul {
-    /* padding: 0.3rem; */
-    overflow: hidden;
-}
-
-.navbar li {
-    display: inline-block;
-    padding: 0.3rem;
-}
-
-.navbar ul li a {
-    color: black;
 }
 
 .allbtns {
@@ -144,14 +128,14 @@ a:hover {
     margin-top: 1rem;
 }
 
-.imgtags h3 {
+/* .imgtags h2 {
     padding: 1rem;
     margin: auto;
     background: #404040;
     border-radius: 50%;
     width: 30px;
     align-self: center;
-}
+} */
 
 .funcs {
     margin: 2.3rem;
@@ -201,9 +185,9 @@ a:hover {
     width: auto;
 }
 
-.contact input,
-.contact textarea {
-    width: 500px;
+.contform textarea,
+.contform input {
+    width: 80%;
     outline: none;
     border: none;
     padding: .5rem;
@@ -213,12 +197,120 @@ a:hover {
 }
 
 textarea {
-    height: 100px;
+    height: 5rem;
 }
 
 .footer {
     background: #404040;
+    width: 100%;
 }
-.contdetail label{
+
+.contdetail label {
     color: white;
 }
+
+.contform .btn-send {
+    border-radius: .2rem;
+    padding: 0.5rem;
+    width: 5rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+/* Login Form and Registration */
+.reg {
+    display: grid;
+    grid-template-columns: 40% 55%;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.reg img {
+    height: auto;
+    width: 100%;
+}
+
+.reg1 .regform {
+    background: #d9d9d9;
+    border: none;
+    padding: 2rem;
+    border-radius: .5rem;
+    width: 80%;
+}
+
+.regform input[type=text],
+.regform input[type=date],
+.regform input[type=password] {
+    background: #b9d4ff;
+    border-radius: .2rem;
+    border: none;
+    outline: none;
+    padding: .8rem;
+    margin: .8rem;
+    width: 80%;
+}
+
+.regform select {
+    background: #b9d4ff;
+    border-radius: .2rem;
+    border: none;
+    outline: none;
+    padding: .8rem;
+    margin: .8rem;
+    width: 85%;
+}
+
+.regform input[type=file] {
+    background: #b9d4ff;
+    border-radius: .2rem;
+    border: none;
+    outline: none;
+    padding: .7rem;
+    margin: .8rem;
+    width: 80%;
+}
+
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #084cdf;
+    padding: 5px 16px;
+    border-radius: .2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+    background: #0d45a5;
+}
+
+.regform .btn-submit {
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin: 1rem;
+    background: #b9d4ff;
+    color: black;
+}
+
+.regform h5 {
+    margin-left: auto;
+    padding: 0.4rem;
+    margin: 1rem;
+    color: black;
+}
+
+.regform h4 span {
+    margin-left: auto;
+    padding: 0.4rem;
+    font-size: 0.8rem;
+    margin: 1rem;
+    color: black;
+}
+
+
+/* profile  */
