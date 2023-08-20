@@ -75,7 +75,7 @@
         padding-top: 1.3rem;
         font-size: 1.5rem;
         text-align: left;
-        width: 50%;
+        width: 70%;
     }
 
     .sect img {
@@ -89,9 +89,9 @@
         margin: 0.5rem;
     }
 
-    .imgtags p {
+    /* .imgtags p {
         text-align: left;
-    }
+    } */
 
     .picsec2 .imgtags img {
         width: 90%;

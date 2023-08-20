@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
 $title = "How it works";
 // Initialize the session
 // Check if the user is logged in, if not then redirect him to login page
@@ -142,11 +142,11 @@ include "header.php";
 <?php
 include "new.php";
 ?>
-<center>
+<!-- <center>
     <div class="allbtns">
         <a href="createraffle.php" id="btn2">Start Your Raffle Now</a>
         <a href="createraffle.php" id="btn1">Start Donation</a>
     </div>
-</center>
+</center> -->
 <?php
 include "footer.php";

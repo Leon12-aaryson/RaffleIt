@@ -17,7 +17,6 @@ if (isset($_POST['submit'])) {
         ':fname' => $fname,
         ':lname' => $lname,
         ':email' => $email,
-        ':email' => $email,
         ':passwd' => $passwd
     ];
 

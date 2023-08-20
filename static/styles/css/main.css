@@ -15,8 +15,6 @@ a:hover {
     transition: .3s;
 }
 
-.main {}
-
 .main .maintxt {
     padding: 1.5rem;
     padding-top: 5rem;
@@ -25,11 +23,11 @@ a:hover {
 }
 
 .main .abttxt {
-    padding: 1.2rem;
+    padding: .8rem;
     padding-top: 3rem;
     text-align: center;
     font-size: 2.5rem;
-    width: 50%;
+    width: 70%;
     color: white;
     margin: auto;
 }
@@ -128,21 +126,16 @@ a:hover {
     margin-top: 1rem;
 }
 
-/* .imgtags h2 {
-    padding: 1rem;
-    margin: auto;
-    background: #404040;
-    border-radius: 50%;
-    width: 30px;
-    align-self: center;
-} */
-
 .funcs {
     margin: 2.3rem;
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 2rem;
     padding: 1.3rem;
+}
+
+.txt ul{
+    padding-left: 0;
 }
 
 /* 
@@ -153,6 +146,7 @@ a:hover {
     display: flex;
     padding: 1rem;
     margin: 1.5rem;
+    align-items: center;
 }
 
 .sect img {

@@ -77,10 +77,10 @@ include "header.php";
         <?php
         include "new.php";
         ?>
-        <center>
+        <!-- <center>
             <div class="allbtns">
                 <a href="createraffle.php" id="btn2">START FUNDRAISING</a>
             </div>
-        </center>
+        </center> -->
         <?php
         include "footer.php";

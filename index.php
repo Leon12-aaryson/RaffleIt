@@ -1,12 +1,6 @@
 <?php
-session_start();
+// session_start();
 $title = "Raffleitapp";
-// Initialize the session
-// Check if the user is logged in, if not then redirect him to login page
-// if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-//     header("location: login.php");
-//     exit;
-// }
 include "header.php";
 ?>
 <style>
@@ -53,9 +47,9 @@ include "header.php";
             <p>The agreed amount goes to the charity, and the agreed price goes to the lucky winner. Participants
                 now get the chance to donate to a good cause and have the chance of winning themselves!
                 It's a DO GOOD, HAVE FUN event.</p>
-            <div class="allbtns">
+            <!-- <div class="allbtns">
                 <a href="works.php" id="btn2">LEARN MORE</a>
-            </div>
+            </div> -->
         </div>
         <div class="tops">
             <h4>HOW RAFFLEITAPP ATTRACTS INDIVIDUALS AND DONORS</h4>
@@ -80,10 +74,10 @@ include "header.php";
                 <p>Create a personalized raffle page. Set the duration as long as you'd like. Great 
                     for stand-alone raffles or to supplement an existing one.</p>
             </div>
-            <div class="allbtns">
+            <!-- <div class="allbtns">
                 <a href="createraffle.php" id="btn2">START HERE</a>
                 <a href="createraffle.php" id="btn1">DONATIONS</a>
-            </div>
+            </div> -->
         </div>
         <div class="imgtags">
             <!-- <img src="static/images/team.jpeg" alt=""> -->
@@ -137,12 +131,12 @@ include "header.php";
 <?php
 include "new.php";
 ?>
-<center>
+<!-- <center>
     <div class="allbtns">
         <a href="createraffle.php" id="btn2">Start Your Raffle Now</a>
         <a href="createraffle.php" id="btn1">Start Donation</a>
     </div>
-</center>
+</center> -->
 
 <?php
 
