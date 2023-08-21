@@ -27,8 +27,8 @@ include "include.php";
                 <?php
                 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                     // user is not logged in, display the login link
-                    echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="login-system/index.php">Login</a></li>';
-                    echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="login-system/register.php">Register</a></li>';
+                    echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="verification/login-user.php">Login</a></li>';
+                    echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="verification/signup-user.php">Register</a></li>';
                 } else {
                     // user is already logged in, display the logout link
                     echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="raffles.php">View Raffles</a></li>';
