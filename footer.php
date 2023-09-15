@@ -21,7 +21,7 @@
         </div>
     </div>
     <center style="padding: 0.5rem;">&copy; All rights reserved to raffleItapp</center>
-    <center style="padding: 0.5rem;">&copy; Designed by leon</center>
+    <center style="padding: 0.5rem;">Designed by leon</center>
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

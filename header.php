@@ -27,12 +27,12 @@ include "include.php";
                 <?php
                 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                     // user is not logged in, display the login link
-                    echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="verification/login-user.php">Login</a></li>';
-                    echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="verification/signup-user.php">Register</a></li>';
+                    echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="dashboard/login-user.php">Login</a></li>';
+                    echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="dashboard/signup-user.php">Register</a></li>';
                 } else {
                     // user is already logged in, display the logout link
                     echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="raffles.php">View Raffles</a></li>';
-                    echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="../raffleIt/login-system/index?logout">Logout</a></li>';
+                    echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="dashboard/index?logout">Logout</a></li>';
                 }
                 ?>
         </div>
