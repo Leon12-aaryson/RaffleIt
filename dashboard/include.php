@@ -18,7 +18,7 @@
 </style>
 
 <title>
-    <?= $title ?>
+    <?php $title ?>
 </title>
 
 <meta charset="UTF-8">

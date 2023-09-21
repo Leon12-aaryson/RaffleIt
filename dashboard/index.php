@@ -45,6 +45,7 @@ include "header.php";
                     <tr>
                         <td>#</td>
                         <td>Host Name</td>
+                        <td>Reason</td>
                         <td>Start Date</td>
                         <td>End Date</td>
                         <td>Edit</td>

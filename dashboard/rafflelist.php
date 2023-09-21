@@ -23,8 +23,10 @@ $admit = $querry->fetchAll(PDO::FETCH_OBJ);
                 <thead style="font-weight: 600;">
                     <tr>
                         <td>#</td>
-                        <td>Name</td>
+                        <td>Host Name</td>
                         <td>Reason</td>
+                        <td>Start Date</td>
+                        <td>End Date</td>
                         <td>Edit</td>
                         <td>Delete</td>
                     </tr>

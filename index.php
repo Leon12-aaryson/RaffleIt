@@ -40,19 +40,19 @@ include "header.php";
 
         </div>
         <div class="tops">
-            <h4>FOR CHARITY DONATIONS</h4>
+            <!-- <h4>FOR CHARITY DONATIONS</h4>
             <h5>NOTE: THIS IS FOR DONATIONS WHICH IS NOT PART OF THE RAFFLE: THESE ARE FOR PERSONS WHO MAY WANT TO DONATE BUT IS NOT TAKING PART IN THE RAFFLE
                 90% goes to the charity
-            </h5>
+            </h5> -->
             <p>The agreed amount goes to the charity, and the agreed price goes to the lucky winner. Participants
                 now get the chance to donate to a good cause and have the chance of winning themselves!
-                It's a DO GOOD, HAVE FUN event.</p>
+                <!-- It's a DO GOOD, HAVE FUN event.</p> -->
             <!-- <div class="allbtns">
                 <a href="works.php" id="btn2">LEARN MORE</a>
             </div> -->
         </div>
         <div class="tops">
-            <h4>HOW RAFFLEITAPP ATTRACTS INDIVIDUALS AND DONORS</h4>
+            <h4>HOW RAFFLEITAPP ATTRACTS INDIVIDUALS</h4>
             <p>RaffleItApp connects your raffle to persons and donors outside of your community so they can take
                  part in the raffle or donate remotely to your cause. Revolutionize raffles and fundraising!</p>
         </div>

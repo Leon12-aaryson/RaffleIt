@@ -3,12 +3,14 @@
 <html lang="en">
 
 <?php
-ini_set('display_errors',1);
+ini_set('display_errors', 1);
 error_reporting(E_ALL);
 ?>
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/styles/css/style.css">
@@ -17,13 +19,13 @@ error_reporting(E_ALL);
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-4 offset-md-4 form login-form">
+            <div class="form login-form">
                 <form action="login-user.php" method="POST" autocomplete="">
                     <h2 class="text-center">Login Form</h2>
                     <p class="text-center">Login with your email and password.</p>
                     <?php
                     if (count($errors) > 0) {
-                        ?>
+                    ?>
                         <div class="alert alert-danger text-center">
                             <?php
                             foreach ($errors as $showerror) {
@@ -31,12 +33,11 @@ error_reporting(E_ALL);
                             }
                             ?>
                         </div>
-                        <?php
+                    <?php
                     }
                     ?>
                     <div class="form-group">
-                        <input class="form-control" type="email" name="email" placeholder="Email Address" required
-                            value="<?php echo $email ?>">
+                        <input class="form-control" type="email" name="email" placeholder="Email Address" required value="<?php echo $email ?>">
                     </div>
                     <div class="form-group">
                         <input class="form-control" type="password" name="password" placeholder="Password" required>
