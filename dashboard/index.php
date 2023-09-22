@@ -48,8 +48,8 @@ include "header.php";
                         <td>Reason</td>
                         <td>Start Date</td>
                         <td>End Date</td>
-                        <td>Edit</td>
-                        <td>Delete</td>
+                        <!-- <td>Edit</td>
+                        <td>Delete</td> -->
                     </tr>
                 </thead>
                 <?php foreach ($admit as $samp): ?>
@@ -61,19 +61,22 @@ include "header.php";
                             <?php echo $samp->hostname; ?>
                         </td>
                         <td>
+                            <?php echo $samp->reason; ?>
+                        </td>
+                        <td>
                             <?php echo $samp->startdate; ?>
                         </td>
                         <td>
                             <?php echo $samp->enddate; ?>
                         </td>
-                        <td><a href="update.php?id=<?= $samp->id; ?>" class="text-primary">
+                        <!-- <td><a href="update.php?id=<?= $samp->id; ?>" class="text-primary">
                                 <i class='bx bxs-edit'></i></a></td>
                         <td>
                             <form action="delraffle.php" method="POST">
                                 <button type="submit" name="delete" value="<?= $samp->id; ?>" class="text-danger"><i
                                         class='bx bx-trash'></i></button>
                             </form>
-                        </td>
+                        </td> -->
                     </tr>
                 <?php endforeach ?>
             </table>

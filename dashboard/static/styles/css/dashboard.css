@@ -308,8 +308,11 @@ aside a i {
     font-style: oblique;
 }
 
-input.form-control:focus {
-    box-shadow: none;
+input.form-control:focus,
+.form-control:focus,
+textarea.form-control {
+    box-shadow: none !important;
+    outline: none !important;
 }
 
 @media screen and (max-width: 768px) {

@@ -1,53 +1,4 @@
 <?php
-
-$title = "Raffles";
-
-include "header.php";
-require "dbconn.php";
-
-$sql = "SELECT * FROM raffles";
-$querry = $conn->prepare($sql);
-
-$retdata = $querry->execute();
-
-$raffles = $querry->fetchAll(PDO::FETCH_OBJ);
-
-?>
-
-<style>
-
-</style>
-</head>
-<center>
-    <p></p>
-</center>
-
-<div class="restsec2">
-    <?php foreach ($raffles as $samp): ?>
-        <div class="rafcard">
-            <img src="<?php echo $samp->picture; ?>" alt="">
-            <!-- <img src="static/images/abt_50.jpg" alt=""> -->
-            <div class="detail">
-                <!-- <h4><?php echo $samp->company; ?></h4> -->
-                <h4>
-                    <?php echo $samp->reason; ?>
-                </h4>
-                <h6>@
-                    <?php echo $samp->hostname; ?>
-                </h6>
-                <h5> Draws
-                    <?php echo $samp->enddate; ?>
-                </h5>
-                <!-- <h4><?php echo $samp->enddate; ?></h4> amount paid -->
-            </div>
-            <p><a href="paypal/payment.php">Buy tickets</a></p>
-        </div>
-
-    <?php endforeach ?>
-</div>
-
-
-<?php
 include "footer.php";
 ?>
 
@@ -56,11 +7,11 @@ include "footer.php";
     .restsec2 {
         padding: 2rem;
         display: grid;
-        grid-template-columns: repeat(3, 1.2fr);
+        grid-template-columns: repeat(4, 1.2fr);
         gap: 1rem;
     }
 
-    .rafcard {
+    /* .rafcard {
         display: grid;
         grid-template-columns: repeat(2, 50%);
         gap: 1rem;
@@ -72,7 +23,9 @@ include "footer.php";
         align-items: center;
         box-shadow: 1px 1px 3px grey;
         align-items: center;
-    }
+    } */
+
+    .refcard {}
 
     .rafcard h4 {
         font-weight: 400;
@@ -109,3 +62,44 @@ include "footer.php";
         }
     }
 </style>
+
+<?php
+
+$title = "Raffles";
+
+include "header.php";
+require "dbconn.php";
+
+$sql = "SELECT * FROM raffles";
+$querry = $conn->prepare($sql);
+
+$retdata = $querry->execute();
+
+$raffles = $querry->fetchAll(PDO::FETCH_OBJ);
+
+?>
+
+<style>
+
+</style>
+</head>
+<!-- <center>
+    <p></p>
+</center> -->
+
+<div class="restsec2">
+    <?php foreach ($raffles as $samp) : ?>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="<?php echo $samp->picture; ?>" alt="Card image cap">
+            <div class="card-body">
+                <!-- <h5 class="card-title"><?php echo $samp->hostname; ?></h5> -->
+                <h6 class="card-subtitle mb-2 text-muted">Host: <?php echo $samp->hostname; ?></h6>
+                <p class="card-text">
+                    <?php echo $samp->reason; ?></p>
+                <h6 class="card-subtitle mb-2 text-muted">Start Date: <?php echo $samp->startdate; ?></h6>
+                <h6 class="card-subtitle mb-2 text-muted">End Date: <?php echo $samp->enddate; ?></h6>
+                <a href="#" class="btn btn-primary">Buy ticket</a>
+            </div>
+        </div>
+    <?php endforeach ?>
+</div>

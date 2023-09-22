@@ -15,14 +15,14 @@ require "header.php";
             <div class="card regcard p-1">
                 <div class="card-body">
                     <!-- <h5 class="card-title">Create Raffles</h5> -->
-                    <form action="dbraffle.php" class="form-group" method="POST"  enctype="multipart/form-data">
+                    <form action="dbraffle.php" class="form-group" method="POST" enctype="multipart/form-data">
                         <div class="form-group">
                             <label for="hostname">Host Name</label>
                             <input id="hostname" class="form-control" type="text" name="hostname" placeholder="Enter Host name">
                         </div>
                         <div class="form-group">
                             <label for="reason">Reason</label>
-                            <input id="reason" class="form-control" type="text" name="reason" placeholder="Enter Reason for raffle">
+                            <textarea name="reason" id="reason" type="text" class="form-control" cols="30" rows="5" placeholder="Enter Reason for raffle"></textarea>
                         </div>
                         <div class="form-group">
                             <label for="picture">Picture</label>

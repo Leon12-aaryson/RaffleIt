@@ -48,7 +48,7 @@ include "include.php";
                     echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="verification/signup-user.php">Register</a></li>';
                 } else {
                     // user is already logged in, display the logout link
-                    echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="rafflelist.php">View Raffles</a></li>';
+                    echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="raffles.php">View Raffles</a></li>';
                     echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="logout-user.php">Logout</a></li>';
                     // <button type="button" class="btn btn-light"><a href="logout-user.php">Logout</a></button>
                 }
