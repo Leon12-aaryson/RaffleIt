@@ -1,0 +1,35 @@
+// Assume you have a database connection established
+$pdo = new PDO('mysql:host=localhost;dbname=your_database', 'your_username', 'your_password');
+
+// Replace this with your actual SQL query to retrieve product details
+$product_id = 1; // Replace with the actual product ID you want to fetch
+$stmt = $pdo->prepare("SELECT product_name, product_price FROM products WHERE product_id = :product_id");
+$stmt->bindParam(':product_id', $product_id, PDO::PARAM_INT);
+$stmt->execute();
+
+// Fetch the product data from the database
+$product = $stmt->fetch(PDO::FETCH_ASSOC);
+
+if ($product) {
+    $product_name = $product['product_name'];
+    $product_price = $product['product_price'];
+
+    // Create a Stripe checkout session with the retrieved product data
+    $checkout_session = $stripe->checkout->sessions->create([
+        'line_items' => [[
+            'price_data' => [
+                'currency' => 'usd',
+                'product_data' => [
+                    'name' => $product_name, // Product name from the database
+                ],
+                'unit_amount' => $product_price * 100, // Convert price to cents
+            ],
+            'quantity' => 1, // Number of items to purchase
+        ]],
+        'mode' => 'payment', // Payment mode
+        'success_url' => 'http://localhost:4242/success', // Redirect URL after successful payment
+        'cancel_url' => 'http://localhost:4242/cancel', // Redirect URL if the user cancels the payment
+    ]);
+} else {
+    // Handle the case where the product with the specified ID was not found in the database
+}

@@ -1,6 +1,27 @@
 <?php
 $title = "Raffles";
 require "header.php";
+
+$email = $_SESSION['email'];
+$password = $_SESSION['password'];
+if ($email != false && $password != false) {
+    $sql = "SELECT * FROM usertable WHERE email = '$email'";
+    $run_Sql = mysqli_query($con, $sql);
+    if ($run_Sql) {
+        $fetch_info = mysqli_fetch_assoc($run_Sql);
+        $status = $fetch_info['status'];
+        $code = $fetch_info['code'];
+        if ($status == "verified") {
+            if ($code != 0) {
+                header('Location: reset-code.php');
+            }
+        } else {
+            header('Location: user-otp.php');
+        }
+    }
+} else {
+    header('Location: login-user.php');
+}
 ?>
 
 <div class="row whole">
@@ -16,6 +37,7 @@ require "header.php";
                 <div class="card-body">
                     <!-- <h5 class="card-title">Create Raffles</h5> -->
                     <form action="dbraffle.php" class="form-group" method="POST" enctype="multipart/form-data">
+                        <input type="hidden" name="creator" value="<?php echo $email = $_SESSION['email']; ?>">
                         <div class="form-group">
                             <label for="hostname">Host Name</label>
                             <input id="hostname" class="form-control" type="text" name="hostname" placeholder="Enter Host name">

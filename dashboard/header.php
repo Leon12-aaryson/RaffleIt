@@ -27,6 +27,12 @@ if ($email != false && $password != false) {
 include "include.php";
 ?>
 
+<style>
+    .toggle i{
+        color: white;
+    }
+</style>
+
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
@@ -44,8 +50,8 @@ include "include.php";
                 // if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true)
                 if ($email == false && $password == false) {
                     // user is not logged in, display the login link
-                    echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="verification/login-user.php">Login</a></li>';
-                    echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="verification/signup-user.php">Register</a></li>';
+                    echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="dashboard/login-user.php">Login</a></li>';
+                    echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="dashboard/signup-user.php">Register</a></li>';
                 } else {
                     // user is already logged in, display the logout link
                     echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="raffles.php">View Raffles</a></li>';

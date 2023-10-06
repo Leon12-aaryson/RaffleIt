@@ -1,3 +1,12 @@
+<style>
+    .footer .contact label{
+        color: white;
+    }
+    .contdetail{
+        color: gray;
+    }
+</style>
+
 <section class="footer">
     <div class="contact" id="contact">
         <div class="contform">

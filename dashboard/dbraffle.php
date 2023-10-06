@@ -2,7 +2,8 @@
 require "dbconn.php";
 //gallery data form
 
-$target_dir = "static/uploads/";
+$target_dir = "dashboard/static/uploads/";
+// $target_dir = "dashboard/static/uploads/";
 $target_file = $target_dir . basename($_FILES["picture"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
@@ -54,12 +55,13 @@ if (isset($_POST["submit"])) {
     $startdate = $_POST['startdate'];
     $enddate = $_POST['enddate'];
 
-    $sql = "INSERT INTO raffles (hostname, reason, picture, startdate, enddate) VALUES (:hostname, :reason, :picture, :startdate, :enddate)";
+    $sql = "INSERT INTO raffles (creator, hostname, reason, picture, startdate, enddate) VALUES (:creator, :hostname, :reason, :picture, :startdate, :enddate)";
     $querry = $conn->prepare($sql);
 
     $data = [
         ':hostname' => $hostname,
         ':reason' => $reason,
+        ':creator' => $creator,
         ':picture' => $target_file,
         ':startdate' => $startdate,
         ':enddate' => $enddate

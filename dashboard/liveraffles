@@ -1,0 +1,86 @@
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $numTickets = $_POST["numTickets"];
+
+    if ($numTickets == 7) {
+        $amount = 10 * 100;
+    } elseif ($numTickets == 3) {
+        $amount = 5 * 100;
+    } elseif ($numTickets == 1) {
+        $amount = 2 * 100;
+    } else {
+        // Handle any other number of tickets
+        $amount = 0;
+    }
+
+    echo "Amount: $" . $amount;
+}
+
+if (isset($_POST['productId'])) {
+    $productId = $_POST['productId'];
+    $productHost = $_POST['productHost'];
+    $productReason = $_POST['productReason'];
+    // Use the product ID as needed
+    // ...
+
+    // new addition for amount
+    $payment_amount = $_POST['payment_amount'];
+
+    $checkout_session = $stripe->checkout->sessions->create([
+        'line_items' => [[
+            'price_data' => [
+                'currency' => 'usd',
+                'product_data' => [
+                    'name' => $productHost,
+                ],
+                'unit_amount' => $amount,
+            ],
+            'quantity' => 1,
+        ]],
+        'mode' => 'payment',
+        'success_url' => 'https://raffleitapp.com',
+        'cancel_url' => 'https://raffleitapp.com',
+    ]);
+
+    header("HTTP/1.1 303 See Other");
+    header("Location: " . $checkout_session->url);
+}
+
+if (isset($_POST['productId'])) {
+    $productreason = $_POST['reason'];
+}
+
+if (isset($_POST['transdata'])) {
+    $payment_id = $_POST['payment_id'];
+    $payment_amount = $_POST['payment_amount'];
+    $ticket_number = $_POST['ticket_number'];
+    $payment_method = $_POST['payment_method'];
+    $currency = $_POST['currency'];
+    $payment_reason = $_POST['payment_reason'];
+    $payment_status = $_POST['payment_status'];
+    $payment_date = $_POST['payment_date'];
+
+    $sql = "INSERT INTO payments (payment_id, payment_amount, reason, ticket_number, payment_method, currency, payment_status, payment_date) VALUES
+     (:payment_id, :payment_amount, :payment_reason, :ticket_number, :payment_method, :currency, :payment_status, :payment_date)";
+    $querry = $conn->prepare($sql);
+
+    $data = [
+        ':payment_id' => $payment_id,
+        ':payment_amount' => $payment_amount,
+        ':ticket_number' => $ticket_number,
+        ':payment_method' => $payment_method,
+        ':currency' => $currency,
+        ':payment_status' => $payment_status,
+        ':payment_date' => $payment_date,
+        ':payment_reason' => $payment_reason
+    ];
+
+    $insertdata = $querry->execute($data);
+
+    if (isset($insertdata)) {
+        $_SESSION['message'] = "Data Inserted";
+    } else {
+        $_SESSION['message'] = "Data insertion failed";
+    }
+    // header('Location: eventlist.php');
+    die();
+}

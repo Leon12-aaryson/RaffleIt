@@ -56,4 +56,7 @@
 <link rel="stylesheet" href="static/styles/css/nav.css">
 <link rel="stylesheet" href="static/styles/css/style.css">
 
+<!-- Stripe payments -->
+
+
 </head>

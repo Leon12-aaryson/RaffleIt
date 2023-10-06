@@ -1,11 +1,11 @@
 <?php
-include "include.php";
+require "dbconn.php";
+include "include.php"; 
 ?>
 
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <!-- <span class="navbar-toggler-icon"></span> -->
             <li class="toggle"><a href="#"><i class="bx bx-menu"></i></a></li>
         </button>
@@ -24,9 +24,12 @@ include "include.php";
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
                 </li>
+
                 <?php
                 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+                    // if ($email == false && $password == false) {
                     // user is not logged in, display the login link
+                    echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="raffles.php">View Raffles</a></li>';
                     echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="dashboard/login-user.php">Login</a></li>';
                     echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="dashboard/signup-user.php">Register</a></li>';
                 } else {

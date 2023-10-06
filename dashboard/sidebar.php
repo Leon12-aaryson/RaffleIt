@@ -18,7 +18,7 @@
                     </a>
                 </li> -->
             </ul>
-        
+
         <li class="item">
             <div class="icon-link sub-btn">
                 <a href="#">
@@ -31,6 +31,34 @@
                 <li><a href="addraffle.php"><i class='bx bxs-chevrons-right'></i>Add Raffles</a>
                 </li>
                 <li><a href="rafflelist.php"><i class='bx bxs-chevrons-right'></i>Raffle List</a>
+                </li>
+            </ul>
+        </li>
+        <li class="item">
+            <div class="icon-link sub-btn">
+                <a href="#">
+                    <i class='bx bxs-group'></i>
+                    <span>Organisation</span>
+                </a>
+                <i class='bx bxs-chevron-right dropdown'></i>
+            </div>
+            <ul class="sub-menu">
+                <li><a href="addorg.php"><i class='bx bxs-chevrons-right'></i>Create Organisation</a>
+                </li>
+                <li><a href="organisations.php"><i class='bx bxs-chevrons-right'></i>Organisation List</a>
+                </li>
+            </ul>
+        </li>
+        <li class="item">
+            <div class="icon-link sub-btn">
+                <a href="#">
+                    <i class='bx bxs-dice-5'></i>
+                    <span>Raffle draw</span>
+                </a>
+                <i class='bx bxs-chevron-right dropdown'></i>
+            </div>
+            <ul class="sub-menu">
+                <li><a href="rafflewinners.php"><i class='bx bxs-chevrons-right'></i>Raffle winners</a>
                 </li>
             </ul>
         </li>
@@ -54,9 +82,9 @@
 <script src="static/bootstrap/js/bootstrap.min.js"></script>
 <script src="static/bootstrap/js/bootstrap.min.js.map"></script>
 <script type="text/javascript">
-    $(document).ready(function () {
+    $(document).ready(function() {
         //jquery for toggle sub menus
-        $('.sub-btn').click(function () {
+        $('.sub-btn').click(function() {
             $(this).next('.sub-menu').slideToggle(100);
             // setTimeout(() => {
             //     $(this).find('.dropdown').toggleClass('rotate');
