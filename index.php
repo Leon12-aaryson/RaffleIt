@@ -27,34 +27,37 @@ include "header.php";
 
 <div class="main">
     <div class="maintxt">
-        <h2>THE BEST SPACE TO <br>DO YOUR FUNDING</h2>
-        <p>Raffleit is a supplementary fundraising solution that's engaging, expands audience reach & boosts
-            donations.</p>
+        <h2>RAFFLE FROM ANYWHERE</h2>
+        <p>Raffleit provides opportunities to raise funds for business, non-profit organization or even to give 
+            persons a wide range of opportunity to raffle items or own items once you have taken part in the raffle.
+        </p>
     </div>
 </div>
 <div class="restsect">
+
     <center>
         <div class="tops">
             <h4>HOW RAFFLEIT WORKS</h4>
-            <p>The winner gets the price, the person or company who issues the raffle receives 50% of the total </p>
+            <p>RaffleIt has several benefits</p>
+            <p>The winner gets the price, the person or company who issues the raffle receives 50% of the total.
+                RaffleIt App ensures people everywhere in and outside your community, no matter where they are can take
+                part in the raffle or support your cause without taking part in the raffle.
+            </p>
 
         </div>
         <div class="tops">
-            <!-- <h4>FOR CHARITY DONATIONS</h4>
-            <h5>NOTE: THIS IS FOR DONATIONS WHICH IS NOT PART OF THE RAFFLE: THESE ARE FOR PERSONS WHO MAY WANT TO DONATE BUT IS NOT TAKING PART IN THE RAFFLE
-                90% goes to the charity
-            </h5> -->
-            <p>The agreed amount goes to the charity, and the agreed price goes to the lucky winner. Participants
-                now get the chance to donate to a good cause and have the chance of winning themselves!
-                <!-- It's a DO GOOD, HAVE FUN event.</p> -->
-            <!-- <div class="allbtns">
-                <a href="works.php" id="btn2">LEARN MORE</a>
-            </div> -->
+            <p>Set up is free and can be done in a few minutes from the comfort of your home or office.<br>
+                Set up is free and can be done in a few minutes from the comfort of your home or office
+                Prices is sent directly to your door step<br>
+                Winners are selected automatically<br>
+                Tickets are electronic and can be shared through links and QR codes<br>
+                You can watch your raffle grow as persons purchase tickets<br>
+                Very Easy to Use: Paperless and Cashless
         </div>
         <div class="tops">
             <h4>HOW RAFFLEITAPP ATTRACTS INDIVIDUALS</h4>
             <p>RaffleItApp connects your raffle to persons and donors outside of your community so they can take
-                 part in the raffle or donate remotely to your cause. Revolutionize raffles and fundraising!</p>
+                part in the raffle or donate remotely to your cause. Revolutionize raffles and fundraising!</p>
         </div>
     </center>
     <div class="picsec">
@@ -62,8 +65,8 @@ include "header.php";
             <!-- <img src="static/images/team.jpeg" alt=""> -->
             <div class="txt">
                 <h4>Simple & Secure</h4>
-                <p>Set up a raffle in minutes, for free. No credit card required. 
-                    Integrated PCI-compliant payment process to collect prices or donations simply, securely 
+                <p>Set up a raffle in minutes, for free. No credit card required.
+                    Integrated PCI-compliant payment process to collect prices or donations simply, securely
                     and remotely depending on the situation.</p>
             </div>
         </div>
@@ -71,7 +74,7 @@ include "header.php";
             <!-- <img src="static/images/team.jpeg" alt=""> -->
             <div class="txt">
                 <h4>Customizable</h4>
-                <p>Create a personalized raffle page. Set the duration as long as you'd like. Great 
+                <p>Create a personalized raffle page. Set the duration as long as you'd like. Great
                     for stand-alone raffles or to supplement an existing one.</p>
             </div>
             <!-- <div class="allbtns">
@@ -83,7 +86,7 @@ include "header.php";
             <!-- <img src="static/images/team.jpeg" alt=""> -->
             <div class="txt">
                 <h4>Seamless</h4>
-                <p>Electronic tickets. Share links and QR codes at your fingertips. Automated raffle countdown, 
+                <p>Electronic tickets. Share links and QR codes at your fingertips. Automated raffle countdown,
                     winner selection and payout. Plus analytics!</p>
             </div>
         </div>
