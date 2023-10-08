@@ -139,9 +139,6 @@ include "header.php";
     </div>
 </div>
 
-<?php
-include "new.php";
-?>
 <!-- <center>
     <div class="allbtns">
         <a href="createraffle.php" id="btn2">Start Your Raffle Now</a>

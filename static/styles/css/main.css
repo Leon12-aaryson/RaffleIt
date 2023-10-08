@@ -16,10 +16,23 @@ a:hover {
 }
 
 .main .maintxt {
-    padding: 1.5rem;
-    padding-top: 5rem;
-    width: 40%;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    width: 60%;
     color: white;
+    margin-top: 2rem;
+    padding: 2.3rem;
+}
+
+
+.maintxt a {
+    background: #55C595;
+    padding: 0.4rem .8rem;
+    border-radius: 3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FDFDFD !important;
 }
 
 .main .abttxt {
@@ -67,11 +80,6 @@ a:hover {
     border-radius: .3rem;
 }
 
-.restsec {
-    background: #dbd8d3;
-    padding: 2rem;
-}
-
 .tops {
     text-align: center;
     margin: 1rem;
@@ -107,16 +115,6 @@ a:hover {
     font-size: 1.2rem;
 }
 
-.imgtags {
-    text-align: center;
-}
-
-.picsec .imgtags {
-    width: 80%;
-    padding: 1rem;
-    text-align: center;
-    justify-content: center;
-}
 
 .imgtags img {
     width: 100%;
@@ -134,14 +132,10 @@ a:hover {
     padding: 1.3rem;
 }
 
-.txt ul{
+.txt ul {
     padding-left: 0;
 }
 
-/* 
-.funcs .txt ul li{
-    list-style: disc;
-} */
 .sect {
     display: flex;
     padding: 1rem;
@@ -195,7 +189,9 @@ textarea {
 }
 
 .footer {
-    background: #404040;
+    background: #215273;
+    color: #FDFDFD;
+    ;
     width: 100%;
 }
 
@@ -306,5 +302,25 @@ input[type=file]::file-selector-button:hover {
     color: black;
 }
 
+.raft {
+    color: #215273;
+    padding: 1rem;
+}
 
+.raft li{
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    margin-left: 0.5rem;
+}
+.raft i {
+    background: #215273;
+    margin-left: 0.5rem;
+    border-radius: 50%;
+    color: #FDFDFD !important;
+}
+
+.howimg img{
+    width: 60%;
+    align-items: center;
+}
 /* profile  */

@@ -1,17 +1,14 @@
 .container .card {
     flex: 0 0 200px;
     margin: 10px;
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
-    text-align: center;
+    text-align: left;
 }
 
-.container img {
+/* .container img {
     width: 100%;
-    height: 131px;
     background-size: cover;
     object-fit: cover;
-}
+} */
 
 .container .body {
     padding-bottom: 10px;
@@ -74,4 +71,24 @@
     border: 1px solid #0077ff;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
     text-decoration: none;
+}
+
+.draws .card img {
+    max-height: 100px;
+}
+
+.raffle .card .container {
+    padding: 0;
+}
+
+.raffle .card .row {
+    display: flex;
+    align-items: center !important;
+    justify-content: center;
+}
+
+.raffle .card img {
+    border-radius: .4rem;
+    width: 100%;
+    height: 100%;
 }
