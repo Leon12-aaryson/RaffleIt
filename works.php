@@ -28,6 +28,9 @@ include "header.php";
 </head>
 
 <div class="main">
+    <?php
+    include "nav.php";
+    ?>
     <!-- <center> -->
     <div class="abttxt">
         <h2>How RaffleItApp works</h2>

@@ -10,6 +10,10 @@
     transition: .2s;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 a:hover {
     letter-spacing: .05rem;
     transition: .3s;
@@ -307,11 +311,12 @@ input[type=file]::file-selector-button:hover {
     padding: 1rem;
 }
 
-.raft li{
+.raft li {
     padding: 0.5rem 1rem;
     border-radius: 2rem;
     margin-left: 0.5rem;
 }
+
 .raft i {
     background: #215273;
     margin-left: 0.5rem;
@@ -319,8 +324,9 @@ input[type=file]::file-selector-button:hover {
     color: #FDFDFD !important;
 }
 
-.howimg img{
+.howimg img {
     width: 60%;
     align-items: center;
 }
+
 /* profile  */

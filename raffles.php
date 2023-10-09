@@ -19,7 +19,9 @@ $retdata = $querry->execute();
 $raffles = $querry->fetchAll(PDO::FETCH_OBJ);
 ?>
 
-
+<?php
+include "nav.php";
+?>
 <div class="container">
     <div class="row">
         <?php foreach ($raffles as $samp) : ?>

@@ -16,7 +16,7 @@ include "header.php";
         background: linear-gradient(to bottom, rgba(17, 17, 17, 0.52), rgba(17, 17, 17, 0.52)),
             url('static/images/donate.jpg');
         background-size: cover;
-        height: 50vh;
+        height: 30vh;
         padding: 1.5rem;
     }
 
@@ -30,6 +30,9 @@ include "header.php";
 </head>
 
 <div class="main">
+    <?php
+    include "nav.php";
+    ?>
     <center>
         <div class="abttxt">
             <h2>About RaffleItApp</h2>
