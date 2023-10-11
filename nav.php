@@ -9,7 +9,7 @@
                 <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.php">HOME</a></li>
                 <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.php">ABOUT</a></li>
                 <li class="nav-item"><a class="nav-link active" aria-current="page" href="works.php">HOW IT WORKS</a></li>
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#contact">CONTACT</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.php">CONTACT</a></li>
                 <?php
                 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                     echo '<li class="nav-item raff-item"><a class="nav-link active" aria-current="page" href="raffles.php">View Raffles</a></li>';

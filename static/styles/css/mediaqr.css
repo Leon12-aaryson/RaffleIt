@@ -1,4 +1,4 @@
-@media (max-width: 756px) {
+@media (max-width: 768px) {
     .main {
         height: 50vh;
     }
@@ -18,7 +18,7 @@
     .tops p {
         text-align: left;
     }
-    
+
     .sect {
         display: block;
         /* padding: 1rem;
@@ -64,27 +64,6 @@
         max-width: 100%;
     }
 
-    .picsec2 {
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 1.2rem;
-        margin: 0.5rem;
-    }
-
-    /* .imgtags p {
-        text-align: left;
-    } */
-
-    .picsec2 .imgtags img {
-        width: 90%;
-        height: 60%;
-    }
-
-    .picsec2 .imgtags .txt {
-        text-align: left;
-        padding: 0.5rem;
-    }
-
     .funcs {
         /* display: grid; */
         grid-template-columns: auto;
@@ -115,6 +94,11 @@
 
     .mainbtns {
         margin-top: 1rem;
+    }
+
+    .test1,
+    .test2 {
+        width: 90%;
     }
 }
 

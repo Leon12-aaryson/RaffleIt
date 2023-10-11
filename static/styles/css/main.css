@@ -40,13 +40,11 @@ a:hover {
 }
 
 .main .abttxt {
-    padding: .8rem;
+    padding: 3rem;
     padding-top: 3rem;
-    text-align: center;
     font-size: 2.5rem;
     width: 70%;
     color: white;
-    margin: auto;
 }
 
 .mainbtns {
@@ -92,31 +90,6 @@ a:hover {
 
 .tops h4 {
     text-transform: uppercase;
-}
-
-.picsec {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    gap: 1.2rem;
-    margin-top: 4rem;
-    margin: 2rem;
-}
-
-.picsec2 {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    gap: 1.2rem;
-    margin-top: 4rem;
-    margin: 2rem;
-}
-
-.picsec2 .imgtags img {
-    width: 80%;
-    height: 70%;
-}
-
-.picsec2 h4 {
-    font-size: 1.2rem;
 }
 
 
@@ -306,7 +279,8 @@ input[type=file]::file-selector-button:hover {
     color: black;
 }
 
-.raft {
+.raft,
+.raft1 {
     color: #215273;
     padding: 1rem;
 }
@@ -317,7 +291,20 @@ input[type=file]::file-selector-button:hover {
     margin-left: 0.5rem;
 }
 
-.raft i {
+.raft1 li {
+    padding: 0.5rem 1rem;
+    border-radius: .4rem;
+    margin-left: 0.5rem;
+}
+
+.raft li {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    margin-left: 0.5rem;
+}
+
+.raft i,
+.raft1 i {
     background: #215273;
     margin-left: 0.5rem;
     border-radius: 50%;
@@ -329,4 +316,38 @@ input[type=file]::file-selector-button:hover {
     align-items: center;
 }
 
-/* profile  */
+.test1 .card .card-tite {
+    background: #215273;
+}
+
+.test1,
+.test2 {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hosts,
+.support {
+    border: 1px solid #215273;
+    border-radius: .3rem;
+}
+
+.hosts ul li,
+.support ul li {
+    list-style: disc !important;
+}
+
+.hosts span,
+.support span {
+    font-weight: bold;
+}
+
+.hosts h5 {
+    color: #215273;
+    font-weight: bold;
+}
+
+.support h5 {
+    color: #55C595;
+}

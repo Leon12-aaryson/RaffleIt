@@ -21,18 +21,6 @@ include "header.php";
         font-weight: 600;
     }
 
-    .test1 .card .card-tite {
-        background: #215273;
-
-    }
-
-    .test1,
-    .test2 {
-        width: 50%;
-        margin: 0 auto;
-        text-align: center;
-    }
-
     .custom-image {
         object-fit: cover;
         object-position: center;
@@ -43,13 +31,7 @@ include "header.php";
         width: 30px;
     }
 
-    @media (max-width: 756px) {
-
-        .test1,
-        .test2 {
-            width: 90%;
-        }
-
+    @media (max-width: 768px) {
         .main {
             height: 110vh;
         }
