@@ -198,7 +198,7 @@ $title_name = "Raffles";
                 <div class="col-12 col-md-3">
                     <div class="pin-head-text">
                         <h3>Spin to choose winner</h3>
-                        <p>The winner’s profile will appear here</p>
+                        <p>The winner's profile will appear here</p>
                     </div>
                     <div class="text-center">
                         <img src="./assets/img/spin.png" height="180px" width="180px" alt="">

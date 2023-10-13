@@ -11,17 +11,9 @@ $title_name = "Admin Dashboard";
 <main>
     <div class="admin-main-container p-3">
         <div class="row p-3">
-            <div class="col-12 col-md-3">
-                <div class="admin-sidebar">
-                    <li class="sidebar-item"><a href="">My Tickets</a></li>
-                    <li class="sidebar-item"><a href="">Dashboard</a></li>
-                    <li class="sidebar-item"><a href="">Raffles</a></li>
-                    <li class="sidebar-item"><a href="">Addresses</a></li>
-                    <li class="sidebar-item active"><a href="">Account Details</a></li>
-                    <li class="sidebar-item"><a href="">Payment Method</a></li>
-                    <li class="sidebar-item"><a href="">Logout</a></li>
-                </div>
-            </div>
+            <?php
+            include "side.php";
+            ?>
             <div class="col-12 col-md-9">
                 <div class="admin-container">
                     <div class="admin-card">

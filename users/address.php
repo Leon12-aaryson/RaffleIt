@@ -11,17 +11,9 @@ $title_name = "My Address";
 <main>
     <div class="admin-main-container p-3">
         <div class="row p-3">
-            <div class="col-12 col-md-3">
-                <div class="admin-sidebar">
-                    <li class="sidebar-item"><a href="./ticket.php">My Tickets</a></li>
-                    <li class="sidebar-item"><a href="./dashboard.php">Dashboard</a></li>
-                    <li class="sidebar-item"><a href="">Raffles</a></li>
-                    <li class="sidebar-item active"><a href="./address.php">Addresses</a></li>
-                    <li class="sidebar-item"><a href="account-details.php">Account Details</a></li>
-                    <li class="sidebar-item"><a href="">Payment Method</a></li>
-                    <li class="sidebar-item"><a href="">Logout</a></li>
-                </div>
-            </div>
+            <?php
+            include "side.php";
+            ?>
             <div class="col-12 col-md-9">
                 <!-- all-address -->
                 <div id="all-address">
@@ -160,7 +152,7 @@ $title_name = "My Address";
                                     <label for="email">Zip Code</label>
                                     <input type="text" name="" id="email">
                                 </div>
-                             
+
 
                                 <div class="form-group">
                                     <button type="submit" class="submit-btn">Save Changes</button>
