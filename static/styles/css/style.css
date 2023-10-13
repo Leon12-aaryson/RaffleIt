@@ -9,3 +9,263 @@
   margin: 1rem;
   padding: 1rem;
 }
+
+.hro-section {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.63) 0%, rgba(0, 0, 0, 0.63) 100%), url("./../../images/spin-img.png"), lightgray 50% / cover no-repeat;
+  /* background: url(""); */
+  min-height: 30vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bread {
+  padding: 40px 20px;
+}
+
+.bread p,
+.bread p a {
+  font-size: 12px;
+  color: white;
+  font-weight: 500;
+  align-items: center;
+}
+
+.bread p i {
+  font-size: 14px;
+
+}
+
+.titl {
+  color: #000;
+
+  font-family: Prompt;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 140%;
+
+}
+
+.titl span {
+  color: #55C595;
+}
+
+.custom-card-raffle {
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  min-width: 300px;
+  max-width: 450px;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.custom-card-raffle .first-section {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+
+.custom-card-raffle .first-section img {
+  height: 120px;
+  width: 90px;
+}
+
+.custom-card-raffle .first-section .r-text h5.head {
+  color: var(--Body-text-color, #303030);
+  /* H4 Bold */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+
+
+}
+
+.custom-card-raffle .first-section .r-text h5.head-sub {
+  color: var(--Body-text-color, #303030);
+  /* text-align: center; */
+  /* H5 */
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50%;
+}
+
+
+.custom-card-raffle .first-section .r-text h6 {
+  color: var(--Body-text-color, #303030);
+  /* text-align: center; */
+  /* H5 */
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.hj {
+  color: var(--Body-text-color, #303030);
+  /* H5 Bold */
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.second-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.second-section .raff-total span {
+  display: block;
+}
+
+.second-section .raff-total span:first-child {
+  color: var(--Body-text-color, #303030);
+  /* H5 Bold */
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.second-section .raff-total span:last-child {
+  color: var(--Body-text-color, #303030);
+  /* H5 Bold */
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.container-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.container-custom .custom-thing {
+  width: 600px;
+  border-radius: 10px;
+background: #FFF;
+box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+padding: 12px;
+}
+
+.container-custom .custom-thing .custom-card-raffle {
+  min-width: 300px;
+  max-width: 600px;
+  width: 100%;
+
+}
+
+.container-custom .custom-thing .content h5.desc{
+  color: var(--Heading-Text-color, #161616);
+  /* Title 3 Bold */
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+
+}
+.container-custom .custom-thing .content p.desc{
+
+  color: var(--Body-text-color, #303030);
+/* H5 */
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%;
+}
+
+#raff-img{
+  width: 25%;
+  height: 120px;
+}
+
+h2.sup{
+  color: var(--Button-Color, #55C595);
+/* H5 Bold */
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 140%;
+}
+
+h5 button.support{
+  background-color: #55C595;
+  padding: 6px;
+  color: white;
+}
+
+.tickt-choice{
+  width: 15%;
+  padding: 8px;
+  border-radius: 5px;
+border: 3px solid #215273;
+background: rgba(33, 82, 115, 0.80);
+box-shadow: 0px 2px 20px 0px rgba(33, 82, 115, 0.30);
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.tickt-choice:hover{
+  background: rgba(33, 82, 115, 0.06);
+  color: #215273 !important;
+}
+
+.tickt-choice:hover h4{
+  font-size: 14px;
+  text-align: center;
+  color: #215273;
+  font-weight: 600;
+}
+
+.tickt-choice:hover h6{
+  font-size: 16px;
+    text-align: center;
+    color: #215273;
+    font-weight: 600;
+  }
+
+.tickt-choice h4{
+  font-size: 14px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+.tickt-choice h6{
+font-size: 16px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+
+.text-icon span:last-child{
+  color: var(--Body-text-color, #303030);
+  text-align: center;
+  /* Title 4 Bold */
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+}

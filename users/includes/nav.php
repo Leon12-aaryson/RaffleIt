@@ -7,10 +7,10 @@
         <a class="navbar-brand" href="#"><img src="./../static/images/raffle.png" alt=""></a>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.php">HOME</a></li>
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.php">ABOUT</a></li>
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="works.php">HOW IT WORKS</a></li>
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.php">CONTACT</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="/index.php">HOME</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="/about.php">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="/works.php">HOW IT WORKS</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="/contact.php">CONTACT</a></li>
             </ul>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <?php

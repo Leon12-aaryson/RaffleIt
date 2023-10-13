@@ -3,6 +3,8 @@ $title = "Dashboard | RaffleIt";
 $url_file = "dashboard.php";
 $file_name = "Account";
 $title_name = "Payment Method";
+$active_name = 'pay_method';
+
 ?>
 <?php include_once("./includes/header.php") ?>
 <header>
@@ -11,6 +13,9 @@ $title_name = "Payment Method";
 <main>
     <div class="admin-main-container p-3">
         <div class="row p-3">
+        <?php
+            include "side.php";
+            ?>
             <div class="col-12 col-md-9">
                 <div class="admin-container" style="align-items: flex-start;">
                     <div class="admin-cardi">

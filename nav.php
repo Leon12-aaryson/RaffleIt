@@ -10,7 +10,9 @@
                 <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.php">ABOUT</a></li>
                 <li class="nav-item"><a class="nav-link active" aria-current="page" href="works.php">HOW IT WORKS</a></li>
                 <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.php">CONTACT</a></li>
-                <?php
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <?php
                 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                     echo '<li class="nav-item raff-item"><a class="nav-link active" aria-current="page" href="raffles.php">View Raffles</a></li>';
                     // echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="dashboard/login-user.php">Login</a></li>';
@@ -20,6 +22,8 @@
                     // echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="dashboard/index?logout">Logout</a></li>';
                 }
                 ?>
+            </ul>
         </div>
     </div>
+    
 </nav>

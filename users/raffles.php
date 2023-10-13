@@ -3,6 +3,7 @@ $title = "Dashboard | RaffleIt";
 $url_file = "dashboard.php";
 $file_name = "Account";
 $title_name = "Raffles";
+$active_name = 'raffles';
 ?>
 <?php include_once("./includes/header.php") ?>
 <header>
