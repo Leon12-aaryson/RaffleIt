@@ -17,7 +17,7 @@ $active_name = 'dashboard';
             include "side.php";
             ?>
             <div class="col-12 col-md-9">
-                <h2>hasjhklsjhkjdjk</h2>
+                <h2 class="muted h6">You have no tickets yet</h2>
             </div>
         </div>
     </div>

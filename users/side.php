@@ -1,6 +1,8 @@
 <div class="col-12 col-md-3">
     <div class="admin-sidebar">
-        <li class="sidebar-item <?php echo $active_name == 'ticket' ?  'active' : '';?>"><a href="./ticket.php">My Tickets</a></li>
+    <a href="./ticket.php">
+        <li class="sidebar-item <?php echo $active_name == 'ticket' ?  'active' : '';?>"><a href="#">My Tickets</a></li>
+        <li class="sidebar-item <?php echo $active_name == 'addraffle' ?  'active' : '';?>"><a href="./addraffle.php">Create Raffle</a></li>
         <li class="sidebar-item <?php echo $active_name == 'dashboard' ? 'active' : '';?>"><a href="./dashboard.php">Dashboard</a></li>
         <li class="sidebar-item <?php echo $active_name == 'raffles' ? 'active' : ''?>"><a href="./raffles.php">Raffles</a></li>
         <li class="sidebar-item <?php echo $active_name == 'address' ? 'active' : ''?>"><a href="./address.php">Addresses</a></li>

@@ -403,7 +403,7 @@ include "header.php";
             <a href="raffles.php">
                 <li class="list-item m-1" style="background: #55C595;">Start Raffling Today<i class='bx bx-chevron-right'></i></li>
             </a>
-            <a href="dashboard/addraffle.php">
+            <a href="users/addraffle.php">
                 <li class="list-item m-1" style="border: #55C595 1px solid; color: #161616;">Create Raffle<i class='bx bx-chevron-right'></i></li>
             </a>
         </ul>

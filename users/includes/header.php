@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="Raffleitapp">
@@ -23,8 +24,8 @@
     <link rel="stylesheet" href="./../static/styles/css/mediaqr.css">
     <link rel="stylesheet" href="./../static/styles/css/nav.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./../static/styles/css/style.css">
     <link rel="stylesheet" href="./../static/styles/css/styles.css">
     <link rel="stylesheet" href="./assets/css/index.css">
@@ -48,14 +49,17 @@
         /* Customize the opacity of the navbar */
         .navbar {
             background: rgba(33, 82, 115, 0.01);
-backdrop-filter: blur(75px);/* Adjust the alpha value for desired transparency */
+            backdrop-filter: blur(75px);
+            /* Adjust the alpha value for desired transparency */
         }
 
         /* Customize the color of the navbar text */
         .navbar-dark .navbar-nav .nav-link {
-            color: #000; /* Change to your desired text color */
+            color: #000;
+            /* Change to your desired text color */
         }
     </style>
 </head>
+
 <body>
-    
+    <?php require_once "controllerUserData.php"; ?>

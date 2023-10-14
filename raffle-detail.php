@@ -49,7 +49,6 @@ $raffles = $querry->fetchAll(PDO::FETCH_OBJ);
                     <div class="first-section">
                         <div class="">
                             <img src="./static/images/bag.png" alt="">
-
                         </div>
                         <div class="r-text">
                             <h5 class="head">Free Education Funding Inc.</h5>
@@ -101,26 +100,6 @@ $raffles = $querry->fetchAll(PDO::FETCH_OBJ);
 
                     </div>
                     <div class="d-flex gap-3 justify-content-center" id="ticket-holder">
-                        <!-- <div class="tickt-choice">
-                            <h4>3 Tickets</h4>
-                            <h6>$10</h6>
-                        </div>
-                        <div class="tickt-choice">
-                            <h4>3 Tickets</h4>
-                            <h6>$10</h6>
-                        </div>
-                        <div class="tickt-choice">
-                            <h4>3 Tickets</h4>
-                            <h6>$10</h6>
-                        </div>
-                        <div class="tickt-choice">
-                            <h4>3 Tickets</h4>
-                            <h6>$10</h6>
-                        </div>
-                        <div class="tickt-choice">
-                            <h4>3 Tickets</h4>
-                            <h6>$10</h6>
-                        </div> -->
                     </div>
                     <h5 class="my-3"><button class="support btn btn-sm " id="get_ticket">Get Ticket</button></h5>
                     <hr>
