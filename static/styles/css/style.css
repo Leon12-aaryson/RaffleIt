@@ -259,6 +259,27 @@ font-size: 16px;
   font-weight: 600;
 }
 
+
+.tickt-choice.yes{
+  background: rgba(33, 82, 115, 0.06);
+  color: #215273 !important;
+}
+
+.tickt-choice.yes h4{
+  font-size: 14px;
+  text-align: center;
+  color: #215273;
+  font-weight: 600;
+}
+
+.tickt-choice.yes h6{
+  font-size: 16px;
+    text-align: center;
+    color: #215273;
+    font-weight: 600;
+  }
+
+
 .text-icon span:last-child{
   color: var(--Body-text-color, #303030);
   text-align: center;

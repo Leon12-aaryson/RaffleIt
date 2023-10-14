@@ -122,7 +122,7 @@ $raffles = $querry->fetchAll(PDO::FETCH_OBJ);
                             <h6>$10</h6>
                         </div> -->
                     </div>
-                    <h5 class="my-3"><button class="support btn btn-sm ">Get Ticket</button></h5>
+                    <h5 class="my-3"><button class="support btn btn-sm " id="get_ticket">Get Ticket</button></h5>
                     <hr>
 
                     <div class="d-flex justify-content-between">
@@ -134,16 +134,16 @@ $raffles = $querry->fetchAll(PDO::FETCH_OBJ);
                         </div>
                         <div class="text-icon">
                             <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 30 30" fill="none">
-  <path d="M13.75 8.75H16.25V11.25H13.75V8.75ZM13.75 13.75H16.25V21.25H13.75V13.75ZM15 2.5C8.1 2.5 2.5 8.1 2.5 15C2.5 21.9 8.1 27.5 15 27.5C21.9 27.5 27.5 21.9 27.5 15C27.5 8.1 21.9 2.5 15 2.5ZM15 25C9.4875 25 5 20.5125 5 15C5 9.4875 9.4875 5 15 5C20.5125 5 25 9.4875 25 15C25 20.5125 20.5125 25 15 25Z" fill="#55C595"/>
-</svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 30 30" fill="none">
+                                    <path d="M13.75 8.75H16.25V11.25H13.75V8.75ZM13.75 13.75H16.25V21.25H13.75V13.75ZM15 2.5C8.1 2.5 2.5 8.1 2.5 15C2.5 21.9 8.1 27.5 15 27.5C21.9 27.5 27.5 21.9 27.5 15C27.5 8.1 21.9 2.5 15 2.5ZM15 25C9.4875 25 5 20.5125 5 15C5 9.4875 9.4875 5 15 5C20.5125 5 25 9.4875 25 15C25 20.5125 20.5125 25 15 25Z" fill="#55C595" />
+                                </svg>
                             </span>
                             <span>More Info</span>
                         </div>
                         <div class="text-icon">
                             <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 30 30" fill="none">
-  <path d="M22.5 20.15C21.55 20.15 20.7 20.525 20.05 21.1125L11.1375 15.925C11.2 15.6375 11.25 15.35 11.25 15.05C11.25 14.75 11.2 14.4625 11.1375 14.175L19.95 9.03749C20.625 9.66249 21.5125 10.05 22.5 10.05C24.575 10.05 26.25 8.37499 26.25 6.29999C26.25 4.22499 24.575 2.54999 22.5 2.54999C20.425 2.54999 18.75 4.22499 18.75 6.29999C18.75 6.59999 18.8 6.88749 18.8625 7.17499L10.05 12.3125C9.375 11.6875 8.4875 11.3 7.5 11.3C5.425 11.3 3.75 12.975 3.75 15.05C3.75 17.125 5.425 18.8 7.5 18.8C8.4875 18.8 9.375 18.4125 10.05 17.7875L18.95 22.9875C18.8875 23.25 18.85 23.525 18.85 23.8C18.85 25.8125 20.4875 27.45 22.5 27.45C24.5125 27.45 26.15 25.8125 26.15 23.8C26.15 21.7875 24.5125 20.15 22.5 20.15ZM22.5 5.04999C23.1875 5.04999 23.75 5.61249 23.75 6.29999C23.75 6.98749 23.1875 7.54999 22.5 7.54999C21.8125 7.54999 21.25 6.98749 21.25 6.29999C21.25 5.61249 21.8125 5.04999 22.5 5.04999ZM7.5 16.3C6.8125 16.3 6.25 15.7375 6.25 15.05C6.25 14.3625 6.8125 13.8 7.5 13.8C8.1875 13.8 8.75 14.3625 8.75 15.05C8.75 15.7375 8.1875 16.3 7.5 16.3ZM22.5 25.075C21.8125 25.075 21.25 24.5125 21.25 23.825C21.25 23.1375 21.8125 22.575 22.5 22.575C23.1875 22.575 23.75 23.1375 23.75 23.825C23.75 24.5125 23.1875 25.075 22.5 25.075Z" fill="#55C595"/>
-</svg></span>
+                                    <path d="M22.5 20.15C21.55 20.15 20.7 20.525 20.05 21.1125L11.1375 15.925C11.2 15.6375 11.25 15.35 11.25 15.05C11.25 14.75 11.2 14.4625 11.1375 14.175L19.95 9.03749C20.625 9.66249 21.5125 10.05 22.5 10.05C24.575 10.05 26.25 8.37499 26.25 6.29999C26.25 4.22499 24.575 2.54999 22.5 2.54999C20.425 2.54999 18.75 4.22499 18.75 6.29999C18.75 6.59999 18.8 6.88749 18.8625 7.17499L10.05 12.3125C9.375 11.6875 8.4875 11.3 7.5 11.3C5.425 11.3 3.75 12.975 3.75 15.05C3.75 17.125 5.425 18.8 7.5 18.8C8.4875 18.8 9.375 18.4125 10.05 17.7875L18.95 22.9875C18.8875 23.25 18.85 23.525 18.85 23.8C18.85 25.8125 20.4875 27.45 22.5 27.45C24.5125 27.45 26.15 25.8125 26.15 23.8C26.15 21.7875 24.5125 20.15 22.5 20.15ZM22.5 5.04999C23.1875 5.04999 23.75 5.61249 23.75 6.29999C23.75 6.98749 23.1875 7.54999 22.5 7.54999C21.8125 7.54999 21.25 6.98749 21.25 6.29999C21.25 5.61249 21.8125 5.04999 22.5 5.04999ZM7.5 16.3C6.8125 16.3 6.25 15.7375 6.25 15.05C6.25 14.3625 6.8125 13.8 7.5 13.8C8.1875 13.8 8.75 14.3625 8.75 15.05C8.75 15.7375 8.1875 16.3 7.5 16.3ZM22.5 25.075C21.8125 25.075 21.25 24.5125 21.25 23.825C21.25 23.1375 21.8125 22.575 22.5 22.575C23.1875 22.575 23.75 23.1375 23.75 23.825C23.75 24.5125 23.1875 25.075 22.5 25.075Z" fill="#55C595" />
+                                </svg></span>
                             <span>Share Raffle</span>
                         </div>
                     </div>
@@ -186,19 +186,80 @@ $raffles = $querry->fetchAll(PDO::FETCH_OBJ);
         },
     ]
 
-
-    $(document).ready(function() {
-
-
+    function allItem() {
         ticketPrice.forEach((item, index) => {
             $("#ticket-holder").append(
                 `
-            <div class="tickt-choice">
-                            <h4>${item.name} Tickets</h4>
+            <div class="tickt-choice ${selectedCard == item.id ? 'yes' : ''}" onclick="selectItem('${item.id}','${item.price}','${item.name}')" id="ticket-card"   data-id="${item['id']}" data-price="${item.price}" data-name="${item.name}">
+                            <h4>${item['name']} Tickets</h4>
                             <h6>$${item.price}</h6>
                         </div>
             `
             )
-        })
+        });
+
+    }
+    let selectedCard = "";
+    let selectedPrice = "";
+    let selectedNo = "";
+
+
+
+
+    $(document).ready(function() {
+
+        allItem();
+        // $(".tickt-choice").click(() => {
+
+        //     // var data_id = $(this).attr("data-id");
+        //     console.log("data_id");
+        // })
+
+
+        $("#get_ticket").click(() => {
+            if (selectedCard == "") {
+                Swal.fire({
+                    icon: 'error',
+                    title: '',
+                    text: 'Please select no. of ticket you want to buy',
+
+                });
+                return;
+            } else {
+                const product_id = 1;
+                const product_host = "GIB";
+                const product_reason = "Card ticket";
+                const ticket_num = selectedNo;
+                const amount = selectedPrice;
+
+                const param = {
+                    product_id: product_id,
+                    product_host: product_host,
+                    product_reason: product_reason,
+                    ticket_num: ticket_num,
+                    amount: amount
+                }
+
+                console.log(param);
+                localStorage.setItem('tickets', JSON.stringify(param));
+                window.location.href = "./make_payment.php";
+            }
+        });
+
     });
+
+    function selectItem(id, price, name) {
+        $("#ticket-holder").html('');
+        if (selectedCard == id) {
+            selectedCard = "";
+        } else {
+            selectedCard = id;
+            selectedNo = name;
+            selectedPrice = price;
+
+        }
+
+        allItem();
+        // console.log(id, price, name);
+    }
 </script>
