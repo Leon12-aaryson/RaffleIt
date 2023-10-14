@@ -8,12 +8,27 @@ require "header.php";
 require "dbconn.php";
 
 // for students table
-$sql = "SELECT * FROM raffles";
-$querry = $conn->prepare($sql);
 
-$retdata = $querry->execute();
+if(!isset($_GET['id'])){
+    header("location: ./index.php");
+}
 
-$admit = $querry->fetchAll(PDO::FETCH_OBJ);
+$id = $_GET['id'];
+$sql = "SELECT * FROM raffles where id = :id";
+$statement = $conn->prepare($sql);
+$statement->bindParam(':id', $id, PDO::PARAM_INT);
+$statement->execute();
+$item = $statement->fetch(PDO::FETCH_ASSOC);
+
+if ($item) {
+  
+    $dg = $item['id'];
+    // print_r();
+    echo $dg;
+} else {
+    // No item with the specified ID was found
+    echo "Item not found.";
+}
 ?>
 
 <?php
@@ -51,7 +66,7 @@ $raffles = $querry->fetchAll(PDO::FETCH_OBJ);
                             <img src="./static/images/bag.png" alt="">
                         </div>
                         <div class="r-text">
-                            <h5 class="head">Free Education Funding Inc.</h5>
+                            <h5 class="head">Free Education Funding Inc. </h5>
                             <h5 class="head-sub">Free Education</h5>
                             <h6>@Education</h6>
                             <h6>Freeeducation.com</h6>
