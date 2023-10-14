@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 06, 2023 at 05:18 PM
+-- Generation Time: Oct 14, 2023 at 12:34 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -93,10 +93,12 @@ INSERT INTO `organisation` (`id`, `owner`, `orgname`, `description`, `logo`, `ad
 
 CREATE TABLE `payments` (
   `id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
   `payee_email` varchar(40) NOT NULL,
-  `payment_id` int(11) NOT NULL,
+  `payment_id` varchar(50) NOT NULL,
   `payment_amount` decimal(10,2) DEFAULT NULL,
   `reason` varchar(20) NOT NULL,
+  `ticket_id` int(11) NOT NULL,
   `ticket_number` int(10) NOT NULL,
   `payment_method` varchar(40) NOT NULL,
   `currency` varchar(20) NOT NULL,
@@ -104,50 +106,14 @@ CREATE TABLE `payments` (
   `payment_date` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- --------------------------------------------------------
-
 --
--- Table structure for table `payments1`
+-- Dumping data for table `payments`
 --
 
-CREATE TABLE `payments1` (
-  `id` int(11) NOT NULL,
-  `amount` decimal(10,2) DEFAULT NULL,
-  `currency` varchar(3) DEFAULT NULL,
-  `customer_name` varchar(100) DEFAULT NULL,
-  `email` varchar(100) DEFAULT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `payment_failed`
---
-
-CREATE TABLE `payment_failed` (
-  `id` int(11) NOT NULL,
-  `txn_id` varchar(50) NOT NULL,
-  `amount` int(10) NOT NULL,
-  `currency` varchar(10) NOT NULL,
-  `cus_email` varchar(100) NOT NULL,
-  `name` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `payment_success`
---
-
-CREATE TABLE `payment_success` (
-  `id` int(11) NOT NULL,
-  `txn_id` varchar(50) NOT NULL,
-  `amount` int(10) NOT NULL,
-  `currency` varchar(10) NOT NULL,
-  `cus_email` varchar(100) NOT NULL,
-  `name` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+INSERT INTO `payments` (`id`, `user_id`, `payee_email`, `payment_id`, `payment_amount`, `reason`, `ticket_id`, `ticket_number`, `payment_method`, `currency`, `payment_status`, `payment_date`) VALUES
+(0, 1, 'danakin@gmail.com', 'ch_3O0zHnDbArZGnKh31qLu1zlN', 10.00, 'Card ticket', 1, 3, 'card_1O0zHmDbArZGnKh3zC8oNXhi', 'usd', 'paid', '2023-10-14 04:17:12'),
+(0, 1, 'danakin@gmail.com', 'ch_3O0zHpDbArZGnKh31e6W58rJ', 10.00, 'Card ticket', 1, 3, 'card_1O0zHnDbArZGnKh3pff1wQP7', 'usd', 'paid', '2023-10-14 04:17:14'),
+(0, 1, 'danakin@gmail.com', 'ch_3O0zPmDbArZGnKh33vGYdMlW', 100.00, 'Card ticket', 1, 150, 'card_1O0zPkDbArZGnKh3vK9mN4LY', 'usd', 'paid', '2023-10-14 04:25:27');
 
 -- --------------------------------------------------------
 
@@ -160,6 +126,7 @@ CREATE TABLE `raffles` (
   `creator` varchar(255) NOT NULL,
   `hostname` varchar(20) NOT NULL,
   `reason` varchar(100) NOT NULL,
+  `description` varchar(250) NOT NULL,
   `picture` blob DEFAULT NULL,
   `ticket3` decimal(8,2) NOT NULL,
   `ticket2` decimal(8,2) NOT NULL,
@@ -172,10 +139,10 @@ CREATE TABLE `raffles` (
 -- Dumping data for table `raffles`
 --
 
-INSERT INTO `raffles` (`id`, `creator`, `hostname`, `reason`, `picture`, `ticket3`, `ticket2`, `ticket1`, `startdate`, `enddate`) VALUES
-(1, 'aaronoluk4deleonardo@gmail.com', 'menq', 'just testing', 0x64617368626f6172642f7374617469632f75706c6f6164732f666f736375312e6a7067, 10.00, 5.00, 2.00, '2023-09-22', '2023-09-29'),
-(2, '', 'ed', 'sample 2', 0x64617368626f6172642f7374617469632f75706c6f6164732f706173732e504e47, 10.00, 5.00, 2.00, '2023-09-26', '2023-09-28'),
-(3, '', 'Leon', 'This is the second t', 0x64617368626f6172642f7374617469632f75706c6f6164732f70686f746f5f323032332d30392d30345f31332d30302d34322e6a7067, 10.00, 5.00, 2.00, '2023-09-23', '2023-09-30');
+INSERT INTO `raffles` (`id`, `creator`, `hostname`, `reason`, `description`, `picture`, `ticket3`, `ticket2`, `ticket1`, `startdate`, `enddate`) VALUES
+(1, 'aaronoluk4deleonardo@gmail.com', 'menq', 'just testing', '', 0x64617368626f6172642f7374617469632f75706c6f6164732f666f736375312e6a7067, 10.00, 5.00, 2.00, '2023-09-22', '2023-09-29'),
+(2, '', 'ed', 'sample 2', '', 0x64617368626f6172642f7374617469632f75706c6f6164732f706173732e504e47, 10.00, 5.00, 2.00, '2023-09-26', '2023-09-28'),
+(3, '', 'Leon', 'This is the second t', '', 0x64617368626f6172642f7374617469632f75706c6f6164732f70686f746f5f323032332d30392d30345f31332d30302d34322e6a7067, 10.00, 5.00, 2.00, '2023-09-23', '2023-09-30');
 
 -- --------------------------------------------------------
 
@@ -197,7 +164,8 @@ CREATE TABLE `usertable` (
 --
 
 INSERT INTO `usertable` (`id`, `name`, `email`, `password`, `code`, `status`) VALUES
-(1, 'Oluk Aaron Leonard', 'aaronoluk4deleonardo@gmail.com', '$2y$10$FjHYkTiM5oDKyTmDw.uPWe9bxoVCq8paz/OUuDkGHGVXxspmcmloa', 0, 'verified');
+(1, 'Oluk Aaron Leonard', 'aaronoluk4deleonardo@gmail.com', '$2y$10$FjHYkTiM5oDKyTmDw.uPWe9bxoVCq8paz/OUuDkGHGVXxspmcmloa', 0, 'verified'),
+(2, 'Aaron G', 'gena@gmail.com', '$2y$10$hGSKz6GY6pR2.nOEsS6m8uhQS4tD1jzwBSyh0cQfNJN1KeIQqc6ru', 665953, 'notverified');
 
 -- --------------------------------------------------------
 
@@ -242,31 +210,6 @@ ALTER TABLE `organisation`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `payments`
---
-ALTER TABLE `payments`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `UC_Person` (`payment_id`);
-
---
--- Indexes for table `payments1`
---
-ALTER TABLE `payments1`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `payment_failed`
---
-ALTER TABLE `payment_failed`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `payment_success`
---
-ALTER TABLE `payment_success`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `raffles`
 --
 ALTER TABLE `raffles`
@@ -301,30 +244,6 @@ ALTER TABLE `organisation`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `payments`
---
-ALTER TABLE `payments`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `payments1`
---
-ALTER TABLE `payments1`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `payment_failed`
---
-ALTER TABLE `payment_failed`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `payment_success`
---
-ALTER TABLE `payment_success`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT for table `raffles`
 --
 ALTER TABLE `raffles`
@@ -334,7 +253,7 @@ ALTER TABLE `raffles`
 -- AUTO_INCREMENT for table `usertable`
 --
 ALTER TABLE `usertable`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `winners`
