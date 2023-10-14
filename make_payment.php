@@ -118,8 +118,8 @@
                     // Send the token to your server using AJAX.
                     const param = {
                         token: result.token.id,
-                        card_name: "danscotexc",
-                        email: "danakin@gmail.com",
+                        card_name: name,
+                        email: email,
                         product_id: data.product_id,
                         product_host: data.product_host,
                         product_reason: data.product_reason,

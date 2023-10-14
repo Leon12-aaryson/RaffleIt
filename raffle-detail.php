@@ -9,7 +9,7 @@ require "dbconn.php";
 
 // for students table
 
-if(!isset($_GET['id'])){
+if (!isset($_GET['id'])) {
     header("location: ./index.php");
 }
 
@@ -20,22 +20,22 @@ $statement->bindParam(':id', $id, PDO::PARAM_INT);
 $statement->execute();
 $item = $statement->fetch(PDO::FETCH_ASSOC);
 
-if ($item) {
-  
-    $dg = $item['id'];
-    // print_r();
-    echo $dg;
-} else {
-    // No item with the specified ID was found
-    echo "Item not found.";
-}
+// if ($item) {
+
+//     $dg = $item['id'];
+//     // print_r();
+//     echo $dg;
+// } else {
+//     // No item with the specified ID was found
+//     echo "Item not found.";
+// }
 ?>
 
 <?php
-$sql = "SELECT * FROM raffles";
-$querry = $conn->prepare($sql);
-$retdata = $querry->execute();
-$raffles = $querry->fetchAll(PDO::FETCH_OBJ);
+// $sql = "SELECT * FROM raffles";
+// $querry = $conn->prepare($sql);
+// $retdata = $querry->execute();
+// $raffles = $querry->fetchAll(PDO::FETCH_OBJ);
 ?>
 
 <style>
@@ -55,41 +55,43 @@ $raffles = $querry->fetchAll(PDO::FETCH_OBJ);
         <h2 style="color: white; font-size:24px;"> <?php echo $title_name; ?></h2>
     </div>
 </div>
-<div class="container-fluid bg-white">
+<div class="container bg-white">
     <div class="con p-3">
         <h3 class="titl">Join Live <span>Raffle</span></h3>
-        <div class="container-custom">
-            <div class="custom-thing">
-                <div class="custom-card-raffle">
-                    <div class="first-section">
-                        <div class="">
-                            <img src="./static/images/bag.png" alt="">
-                        </div>
-                        <div class="r-text">
-                            <h5 class="head">Free Education Funding Inc. </h5>
-                            <h5 class="head-sub">Free Education</h5>
-                            <h6>@Education</h6>
-                            <h6>Freeeducation.com</h6>
-                            <div class="d-flex hj">
-                                <span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 26" fill="none">
-                                        <path opacity="0.3" d="M3.14355 7.375L8.71433 12.375L14.2851 7.375V3H3.14355V7.375Z" fill="#215273" />
-                                        <path opacity="0.3" d="M3.14355 7.375L8.71433 12.375L14.2851 7.375V3H3.14355V7.375Z" fill="#215273" />
-                                        <path d="M17.0707 0.5H0.358398V8L5.92917 13L0.372326 18.0125L0.358398 25.5H17.0707L17.0568 18.0125L11.5 13L17.0707 8.0125V0.5ZM14.2853 18.625V23H3.14379V18.625L8.71456 13.625L14.2853 18.625ZM14.2853 7.375L8.71456 12.375L3.14379 7.375V3H14.2853V7.375Z" fill="#215273" />
-                                    </svg></span> <span>1h 30m</span>
+        <div class="row container-custom">
+            <div class="custom-thing col-md-6">
+                <div class="row">
+                    <div class="custom-card-raffle col-md-8">
+                        <div class="first-section">
+                            <div class="">
+                                <img src="<?php echo $item['picture'] ?>" alt="">
                             </div>
-                        </div>
+                            <div class="r-text">
+                                <h5 class="head"><?php echo $item['reason'] ?> </h5>
+                                <h5 class="head-sub">Free Education</h5>
+                                <h6></h6>
+                                <h6>Freeeducation.com</h6>
+                                <div class="d-flex hj">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 26" fill="none">
+                                            <path opacity="0.3" d="M3.14355 7.375L8.71433 12.375L14.2851 7.375V3H3.14355V7.375Z" fill="#215273" />
+                                            <path opacity="0.3" d="M3.14355 7.375L8.71433 12.375L14.2851 7.375V3H3.14355V7.375Z" fill="#215273" />
+                                            <path d="M17.0707 0.5H0.358398V8L5.92917 13L0.372326 18.0125L0.358398 25.5H17.0707L17.0568 18.0125L11.5 13L17.0707 8.0125V0.5ZM14.2853 18.625V23H3.14379V18.625L8.71456 13.625L14.2853 18.625ZM14.2853 7.375L8.71456 12.375L3.14379 7.375V3H14.2853V7.375Z" fill="#215273" />
+                                        </svg></span> <span><?php echo $item['enddate'] ?></span>
+                                </div>
+                            </div>
 
-                    </div>
-                    <div class="second-section">
-                        <div>
-                            <span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 32 32" fill="none">
-                                    <circle cx="16.002" cy="16" r="16" fill="#215273" />
-                                    <path d="M20.502 8C18.762 8 17.092 8.88283 16.002 10.2779C14.912 8.88283 13.242 8 11.502 8C8.42195 8 6.00195 10.6376 6.00195 13.9946C6.00195 18.1144 9.40195 21.4714 14.552 26.5722L16.002 28L17.452 26.5613C22.602 21.4714 26.002 18.1144 26.002 13.9946C26.002 10.6376 23.582 8 20.502 8ZM16.102 24.9482L16.002 25.0572L15.902 24.9482C11.142 20.2507 8.00195 17.1444 8.00195 13.9946C8.00195 11.8147 9.50195 10.1798 11.502 10.1798C13.042 10.1798 14.542 11.2589 15.072 12.752H16.942C17.462 11.2589 18.962 10.1798 20.502 10.1798C22.502 10.1798 24.002 11.8147 24.002 13.9946C24.002 17.1444 20.862 20.2507 16.102 24.9482Z" fill="#55C595" />
-                                </svg></span>
                         </div>
-                        <div class="raff-total">
-                            <span>Total Pot</span>
-                            <span>$100</span>
+                        <div class="second-section">
+                            <div>
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 32 32" fill="none">
+                                        <circle cx="16.002" cy="16" r="16" fill="#215273" />
+                                        <path d="M20.502 8C18.762 8 17.092 8.88283 16.002 10.2779C14.912 8.88283 13.242 8 11.502 8C8.42195 8 6.00195 10.6376 6.00195 13.9946C6.00195 18.1144 9.40195 21.4714 14.552 26.5722L16.002 28L17.452 26.5613C22.602 21.4714 26.002 18.1144 26.002 13.9946C26.002 10.6376 23.582 8 20.502 8ZM16.102 24.9482L16.002 25.0572L15.902 24.9482C11.142 20.2507 8.00195 17.1444 8.00195 13.9946C8.00195 11.8147 9.50195 10.1798 11.502 10.1798C13.042 10.1798 14.542 11.2589 15.072 12.752H16.942C17.462 11.2589 18.962 10.1798 20.502 10.1798C22.502 10.1798 24.002 11.8147 24.002 13.9946C24.002 17.1444 20.862 20.2507 16.102 24.9482Z" fill="#55C595" />
+                                    </svg></span>
+                            </div>
+                            <div class="raff-total">
+                                <span>Total Pot</span>
+                                <span>$100</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -98,7 +100,7 @@ $raffles = $querry->fetchAll(PDO::FETCH_OBJ);
                     <h5 class="desc">
                         Description
                     </h5>
-                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipiscing elit litora, cursus class molestie torquent gravida platea accumsan, felis sapien massa bibendum ante est mollis</p>
+                    <p class="desc"><?php echo $item['description'] ?></p>
                     <h5 class="desc">
                         Item to Raffle
                     </h5>
@@ -114,7 +116,11 @@ $raffles = $querry->fetchAll(PDO::FETCH_OBJ);
                         <h5><button class="support btn btn-sm ">SUPPORT</button></h5>
 
                     </div>
-                    <div class="d-flex gap-3 justify-content-center" id="ticket-holder">
+                    <div class="row">
+                        <div class="col">
+                            <div class="d-flex gap-3 justify-content-center" id="ticket-holder">
+                            </div>
+                        </div>
                     </div>
                     <h5 class="my-3"><button class="support btn btn-sm " id="get_ticket">Get Ticket</button></h5>
                     <hr>
@@ -144,9 +150,6 @@ $raffles = $querry->fetchAll(PDO::FETCH_OBJ);
 
                 </div>
             </div>
-
-
-
         </div>
     </div>
 </div>
@@ -221,8 +224,8 @@ $raffles = $querry->fetchAll(PDO::FETCH_OBJ);
                 return;
             } else {
                 const product_id = 1;
-                const product_host = "GIB";
-                const product_reason = "Card ticket";
+                const product_host = "<?php echo $item['hostname']; ?>";
+                const product_reason = "<?php echo $item['reason']; ?>";
                 const ticket_num = selectedNo;
                 const amount = selectedPrice;
 

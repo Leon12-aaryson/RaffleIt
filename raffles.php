@@ -112,7 +112,7 @@ $raffles = $querry->fetchAll(PDO::FETCH_OBJ);
     }
 </script>
 
-<script>
+<!-- <script>
     let ticketPrice = [{
             id: 1,
             name: 3,
@@ -210,4 +210,4 @@ $raffles = $querry->fetchAll(PDO::FETCH_OBJ);
         allItem();
         // console.log(id, price, name);
     }
-</script>
+</script> -->
